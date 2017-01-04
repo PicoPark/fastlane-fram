@@ -1,15 +1,15 @@
 //
-//  FastlaneFramTests.swift
-//  FastlaneFramTests
+//  FastlaneFrameworkTests.swift
+//  FastlaneFrameworkTests
 //
 //  Created by Salomé Russier on 04/01/2017.
 //  Copyright © 2017 Salomé Russier. All rights reserved.
 //
 
 import XCTest
-@testable import FastlaneFram
+@testable import FastlaneFramework
 
-class FastlaneFramTests: XCTestCase {
+class FastlaneFrameworkTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
