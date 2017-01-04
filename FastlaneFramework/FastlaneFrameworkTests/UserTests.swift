@@ -9,6 +9,7 @@
 import XCTest
 @testable import FastlaneFramework
 
+
 class UserTests: XCTestCase {
     
     func testUserInit(){
@@ -22,6 +23,8 @@ class UserTests: XCTestCase {
         let u = User(login: "log", password: "pass")
         XCTAssertEqual(u.description, "[User: log pass]")
     }
+    
+    //function 
     
     
 }
