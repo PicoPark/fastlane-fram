@@ -1,4 +1,6 @@
 lane :bonjour do
   UI.success "Bravo !"
-  UI.error "Big fail"
+  scan(
+    project: "FastlaneFramework/FastlaneFramework.xcodeproj"
+  )
 end

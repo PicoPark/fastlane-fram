@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import FastlaneFram
+@testable import FastlaneFramework
 
 class UserTests: XCTestCase {
     
