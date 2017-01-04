@@ -10,6 +10,8 @@
 		765B04EB1E1D0DE1002B5506 /* FastlaneFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 765B04E11E1D0DE1002B5506 /* FastlaneFramework.framework */; };
 		765B04F01E1D0DE1002B5506 /* FastlaneFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765B04EF1E1D0DE1002B5506 /* FastlaneFrameworkTests.swift */; };
 		765B04F21E1D0DE1002B5506 /* FastlaneFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 765B04E41E1D0DE1002B5506 /* FastlaneFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		765B04FC1E1D0E5F002B5506 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765B04FB1E1D0E5F002B5506 /* User.swift */; };
+		765B04FE1E1D0EE0002B5506 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765B04FD1E1D0EE0002B5506 /* UserTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		765B04EA1E1D0DE1002B5506 /* FastlaneFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastlaneFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		765B04EF1E1D0DE1002B5506 /* FastlaneFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastlaneFrameworkTests.swift; sourceTree = "<group>"; };
 		765B04F11E1D0DE1002B5506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		765B04FB1E1D0E5F002B5506 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		765B04FD1E1D0EE0002B5506 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 			children = (
 				765B04E41E1D0DE1002B5506 /* FastlaneFramework.h */,
 				765B04E51E1D0DE1002B5506 /* Info.plist */,
+				765B04FB1E1D0E5F002B5506 /* User.swift */,
 			);
 			path = FastlaneFramework;
 			sourceTree = "<group>";
@@ -82,6 +87,7 @@
 			children = (
 				765B04EF1E1D0DE1002B5506 /* FastlaneFrameworkTests.swift */,
 				765B04F11E1D0DE1002B5506 /* Info.plist */,
+				765B04FD1E1D0EE0002B5506 /* UserTests.swift */,
 			);
 			path = FastlaneFrameworkTests;
 			sourceTree = "<group>";
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					765B04E01E1D0DE1002B5506 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					765B04E91E1D0DE1002B5506 = {
@@ -196,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				765B04FC1E1D0E5F002B5506 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				765B04FE1E1D0EE0002B5506 /* UserTests.swift in Sources */,
 				765B04F01E1D0DE1002B5506 /* FastlaneFrameworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +329,7 @@
 		765B04F61E1D0DE1002B5506 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +341,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pico.FastlaneFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +349,7 @@
 		765B04F71E1D0DE1002B5506 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +368,7 @@
 		765B04F91E1D0DE1002B5506 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = FastlaneFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pico.FastlaneFrameworkTests;
@@ -367,6 +380,7 @@
 		765B04FA1E1D0DE1002B5506 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = FastlaneFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pico.FastlaneFrameworkTests;

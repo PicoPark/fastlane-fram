@@ -1,0 +1,4 @@
+lane :bonjour do
+  UI.success "Bravo !"
+  UI.error "Big fail"
+end
