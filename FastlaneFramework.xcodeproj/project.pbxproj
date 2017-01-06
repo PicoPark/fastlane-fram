@@ -408,6 +408,7 @@
 				765B04F71E1D0DE1002B5506 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		765B04F81E1D0DE1002B5506 /* Build configuration list for PBXNativeTarget "FastlaneFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +417,7 @@
 				765B04FA1E1D0DE1002B5506 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
